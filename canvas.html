@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(244, 240, 240);
+            color: aliceblue;
+        }
+        #loginmodel{
+            border:2px solid;
+            width:20vw;
+            height:100vh;
+            top:0px;
+            right:0px;
+            position: fixed;
+            background-color: bisque;
+            box-shadow: -5px -5px 5px black ;
+            border: none;
+            
+        }
+        #loginmodel form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 60vh;
+            border: none;
+            
+            /* line-height: 20px; */
+        }
+        form input{
+            border-radius: 20px;
+        }
+        form button{
+            width: 60px;
+            background-color: black;
+            color: aliceblue;
+            font-size: large;
+            height: 30px;border-radius: 10px;border: none;
+            
+        }
+        form h3{
+            background-color: black;
+            color: aliceblue;
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        form span{
+            font-size: 30px;
+           
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">open</button>
+    
+    <div id="loginmodel">
+        <form action="" autocomplete="off">
+            <span id="btn2"> &times;</span>
+            <h3>Login</h3>
+            
+            <input type="text" placeholder="username"><br>
+           
+            <input type="password"placeholder="password"><br>
+            <button>submit</button>
+        </form>
+    </div>
+    <script src="./canvas.js"></script>
+</body>
+</html>
